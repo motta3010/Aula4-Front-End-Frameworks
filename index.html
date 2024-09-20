@@ -8,6 +8,25 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header><img src="" alt=""></header>
-</body>
+    <header><img src="img/estacionamento.webp" alt=""></header>
+    <h1>Dados do Cliente</h1>
+        <div>
+            Nome: <input type="text" id="nome" style="width: 600px;"> <br>
+            Placa: <input type="text" id="placa">
+            Carro: <input type="text" id="carro"> <br>
+            Quantos Dias<input type="text" id="dias">
+            Valor da Diária<input type="text" id="diaria"> <br>
+        </div>
+
+        <div id="res">
+
+        </div>
+
+        <div>
+            <button onclick="resumo()">Calcular</button>
+            <button onclick="limpar()">Limpar</button>
+            <button onclick="sair()">sair</button>
+
+        </div>
+    </body>
 </html>
