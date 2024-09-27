@@ -7,10 +7,10 @@ function resumo(){
     var preco = parseFloat(dias*diaria);
     var desc = parseFloat( preco-(preco*0.10));
 
-    var resu = document.getElementById("res")
+    var resu = document.getElementById("res");
     
     if (preco > 150) {
-        resu.innerHTML = `${nome} Placa: ${placa} Carro: ${carro} Vai ficar ${dias} dias Valor sem desconto: ${preco} Valor com desconto de 10%: ${desc}`
+        resu.innerHTML = nome +" Placa: "+placa+ "Carro: "+carro+ "Vai ficar "+dias+" dias Valor sem desconto: "+ preco+" Valor com desconto de 10%: " + desc
     } else {
          resu.innerHTML = `${nome} Placa: ${placa} Carro: ${carro} Vai ficar ${dias} dias Valor sem desconto: ${final}`
     }
@@ -18,4 +18,15 @@ function resumo(){
 
 function sair(){
     alert("obg, volte sempre!")
+    window.close();
+}
+
+function limpar(){
+    document.getElementById("nome").value = "";
+    document.getElementById("placa").value = "";
+    document.getElementById("carro").value = "";
+    document.getElementById("dias").value = "";
+    document.getElementById("diaria").value = "";
+    var limp = document.getElementById("res");
+    limp.innerHTML = ""
 }

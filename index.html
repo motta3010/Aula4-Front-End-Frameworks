@@ -6,11 +6,17 @@
     <title>Estacionamento</title>
     <script src="js/javinha.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        h1{
+            text-align: center;
+            background-color: blue;
+        }
+    </style>
 </head>
-<body>
+<body style="background-color: rgb(135, 135, 243);">
     <header><img src="img/estacionamento.webp" alt=""></header>
     <h1>Dados do Cliente</h1>
-        <div>
+        <div class="conteiner">
             Nome: <input type="text" id="nome" style="width: 600px;"> <br>
             Placa: <input type="text" id="placa">
             Carro: <input type="text" id="carro"> <br>
@@ -18,11 +24,13 @@
             Valor da Diária<input type="text" id="diaria"> <br>
         </div>
 
+    <h1>Resumo</h1>    
+
         <div id="res">
 
         </div>
 
-        <div>
+        <div class="but">
             <button onclick="resumo()">Calcular</button>
             <button onclick="limpar()">Limpar</button>
             <button onclick="sair()">sair</button>
